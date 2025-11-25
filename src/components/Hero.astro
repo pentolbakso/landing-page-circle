@@ -1,59 +1,61 @@
 ---
-import { Button } from './ui/button';
+import { Button } from "./ui/button";
 ---
 
-
-<section class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-  <div class="max-w-2xl mx-auto text-center space-y-6">
+<section
+  class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
+>
+  <div
+    class="max-w-2xl mx-auto text-center space-y-6 bg-white/80 backdrop-blur-sm rounded-3xl p-6 sm:bg-transparent sm:backdrop-blur-none sm:p-0"
+  >
     <!-- Main Heading -->
-    <h1 
+    <h1
       class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gradient animate-fadeIn"
       style="animation-delay: 0.1s; opacity: 0;"
     >
-      Work awakens
+      One hub. Your tools.
     </h1>
-    
+
     <!-- Subheading -->
-    <p 
-      class="text-base sm:text-lg md:text-xl text-gray-300 max-w-xl mx-auto leading-relaxed animate-slideUp"
+    <p
+      class="text-base sm:text-lg md:text-xl text-gray-400 max-w-xl mx-auto leading-relaxed animate-slideUp"
       style="animation-delay: 0.3s; opacity: 0;"
     >
-      The first AI agent that combines browser automation with real-time API integrations, 
-      to automate your boring tasks. No code, no workflows, no maintenance — just describe 
-      your goal, and it will figure it out for you.
+      Connect all your favorite apps and services into one unified workspace.
+      Your tools orbit around you — always in sync, always within reach. No more
+      switching tabs, just seamless flow.
     </p>
 
-    
     <!-- CTA Buttons -->
-    <div 
+    <div
       class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 animate-slideUp"
       style="animation-delay: 0.5s; opacity: 0;"
     >
-      <Button 
-        variant="ghost" 
+      <Button
+        variant="ghost"
         size="default"
         className="text-sm sm:text-base px-6 py-4"
         client:load
       >
-        Watch video
+        Watch demo
       </Button>
-      
-      <Button 
-        variant="outline" 
+
+      <Button
+        variant="outline"
         size="default"
         className="text-sm sm:text-base px-6 py-4"
         client:load
       >
-        Try alpha
+        Start free
       </Button>
-      
-      <Button 
-        variant="ghost" 
+
+      <Button
+        variant="ghost"
         size="default"
         className="text-sm sm:text-base px-6 py-4"
         client:load
       >
-        Join slack
+        View integrations
       </Button>
     </div>
   </div>
