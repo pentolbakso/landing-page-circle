@@ -1,0 +1,60 @@
+---
+import { Button } from './ui/button';
+---
+
+
+<section class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+  <div class="max-w-2xl mx-auto text-center space-y-6">
+    <!-- Main Heading -->
+    <h1 
+      class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gradient animate-fadeIn"
+      style="animation-delay: 0.1s; opacity: 0;"
+    >
+      Work awakens
+    </h1>
+    
+    <!-- Subheading -->
+    <p 
+      class="text-base sm:text-lg md:text-xl text-gray-300 max-w-xl mx-auto leading-relaxed animate-slideUp"
+      style="animation-delay: 0.3s; opacity: 0;"
+    >
+      The first AI agent that combines browser automation with real-time API integrations, 
+      to automate your boring tasks. No code, no workflows, no maintenance — just describe 
+      your goal, and it will figure it out for you.
+    </p>
+
+    
+    <!-- CTA Buttons -->
+    <div 
+      class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 animate-slideUp"
+      style="animation-delay: 0.5s; opacity: 0;"
+    >
+      <Button 
+        variant="ghost" 
+        size="default"
+        className="text-sm sm:text-base px-6 py-4"
+        client:load
+      >
+        Watch video
+      </Button>
+      
+      <Button 
+        variant="outline" 
+        size="default"
+        className="text-sm sm:text-base px-6 py-4"
+        client:load
+      >
+        Try alpha
+      </Button>
+      
+      <Button 
+        variant="ghost" 
+        size="default"
+        className="text-sm sm:text-base px-6 py-4"
+        client:load
+      >
+        Join slack
+      </Button>
+    </div>
+  </div>
+</section>
